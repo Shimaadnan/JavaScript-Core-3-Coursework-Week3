@@ -13,7 +13,7 @@ Take a look at the following code:
 6    }
 7    console.log(x);
 ```
-
+Because the first variable in the function body  is local and the second one is global..
 Explain why line 4 and line 6 output different numbers.
 
 ## Question 2
@@ -34,6 +34,7 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+The output will the vlaue of x, for the first console.log and for the second one will be undefined.
 
 ## Question 3
 
@@ -47,8 +48,8 @@ function f1(val) {
   return val;
 }
 
-f1(x);
-console.log(x);
+f1(x); It will call the function
+console.log(x); It will print 9
 
 const y = { x: 9 };
 
@@ -57,8 +58,8 @@ function f2(val) {
   return val;
 }
 
-f2(y);
-console.log(y);
+f2(y); we will call the function
+console.log(y); it will print {x:10}
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
